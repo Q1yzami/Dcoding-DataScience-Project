@@ -80,7 +80,7 @@ def create_rfm_df(df):
     return rfm_df
 
 # Load cleaned data
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("dashboard/all_data.csv")
 
 datetime_col = ['order_purchase_timestamp', 'order_delivered_customer_date']
 all_df.sort_values(by='order_purchase_timestamp', inplace=True)
